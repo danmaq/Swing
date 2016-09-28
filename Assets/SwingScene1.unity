@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SkyboxMaterial: {fileID: 2100000, guid: 4aa30c3a4a7a34bbd9256623e194cf78, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: b5f4313ed6768c64e8785ccb223b0a21, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -219,54 +219,4 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
-  m_RootGameObject: {fileID: 2018866016}
   m_IsPrefabParent: 0
---- !u!1 &2018866016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 177758, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
-  m_PrefabInternal: {fileID: 622627392}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2018866018}
-  - component: {fileID: 2018866017}
-  m_Layer: 0
-  m_Name: GvrViewerMain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2018866017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11489844, guid: 970dd4b9371394fb4890965f608d46fd,
-    type: 2}
-  m_PrefabInternal: {fileID: 622627392}
-  m_GameObject: {fileID: 2018866016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a40b544b8c3553c40852ae7ad35a9343, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vrModeEnabled: 1
-  distortionCorrection: 2
-  neckModelScale: 1
-  autoUntiltHead: 1
-  UseUnityRemoteInput: 0
-  screenSize: 0
-  viewerType: 1
-  stereoScreenScale: 1
---- !u!4 &2018866018
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
-  m_PrefabInternal: {fileID: 622627392}
-  m_GameObject: {fileID: 2018866016}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
