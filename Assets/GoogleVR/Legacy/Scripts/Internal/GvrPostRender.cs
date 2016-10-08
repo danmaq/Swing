@@ -125,8 +125,8 @@ public class GvrPostRender : MonoBehaviour {
     distortionMesh.uv = tex;
     distortionMesh.colors = colors;
     distortionMesh.triangles = indices;
-    //distortionMesh.Optimize();
-    distortionMesh.UploadMeshData(true);
+	//distortionMesh.Optimize(); // Not works for Unity 5.5b!
+	distortionMesh.UploadMeshData(true);
   }
 
   private static void ComputeMeshPoints(int width, int height, bool distortVertices,

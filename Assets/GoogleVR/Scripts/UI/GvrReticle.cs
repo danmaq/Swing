@@ -65,7 +65,7 @@ public class GvrReticle : MonoBehaviour, IGvrGazePointer {
   }
 
   void OnDisable() {
-    if (GazeInputModule.gazePointer == this) {
+	if (GazeInputModule.gazePointer == (IGvrGazePointer)this) {
       GazeInputModule.gazePointer = null;
     }
   }
@@ -188,7 +188,7 @@ public class GvrReticle : MonoBehaviour, IGvrGazePointer {
     mesh.vertices = vertices;
     mesh.triangles = indices;
     mesh.RecalculateBounds();
-    //mesh.Optimize();
+	//mesh.Optimize(); // Not work for Unity 5.5b!
   }
 
   private void UpdateDiameters() {
