@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 
-public class PropellerRotate : MonoBehaviour
+/// <summary>
+/// プロペラを回転させるためのビヘイビア。
+/// </summary>
+public sealed class PropellerRotate : MonoBehaviour
 {
-	// Update is called once per frame
-	private void Update ()
+	/// <summary>
+	/// Update is called once per frame.
+	/// </summary>
+	private void Update()
 	{
-		transform.eulerAngles += new Vector3(0, 0, 10f);
+		transform.localEulerAngles += Vector3.forward * 15f;
 	}
 }

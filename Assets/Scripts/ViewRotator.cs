@@ -1,16 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ViewRotator : MonoBehaviour
+/// <summary>
+/// 飛行船本体を回転させるためのビヘイビア。
+/// </summary>
+public sealed class ViewRotator : MonoBehaviour
 {
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
+	/// <summary>
+	/// Update is called once per frame.
+	/// </summary>
+	private void Update()
 	{
 		transform.localEulerAngles += Vector3.up * 0.01f;
 	}
