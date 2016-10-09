@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// 飛行船本体を回転させるためのビヘイビア。
+/// 飛行船本体を、カメラもろとも回転させるためのビヘイビア。
 /// </summary>
 public sealed class ViewRotator : MonoBehaviour
 {
